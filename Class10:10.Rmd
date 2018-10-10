@@ -1,0 +1,18 @@
+---
+title: "Class 10/10"
+author: "Teresa Rokos"
+date: "10/10/2018"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(knitr)
+library(readxl)
+
+fall_2018_courses <- read_excel("class_enrollment_summary_by_term_10.10.18.xlsx", skip = 2, col_names = TRUE)
+fall_2017_courses <- read_excel("class_enrollment_summary_by_term_10.20.17.xlsx", skip = 2, col_names = TRUE)
+
+glimpse(fall_2018_courses)
+```
+
